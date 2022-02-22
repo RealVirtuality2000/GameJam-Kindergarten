@@ -10,6 +10,7 @@ public class Skills : MonoBehaviour
     private void Awake()
     {
         DontDestroyOnLoad(this);
+        //GameStateManager.Instance.OnGameStateChanged += OnGameStateChanged;
     }
 
     private void Start()
@@ -29,7 +30,9 @@ public class Skills : MonoBehaviour
 
     private void skill_event()
     {
+        GameState newGameState = GameState.Skill;
         //UI interaktion für auswahl skill
+        //on click GameState -> Gameplay
     }
 
     private void inc_max_lifepoints()
