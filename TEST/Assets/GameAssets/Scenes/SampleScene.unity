@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 27513944}
   - component: {fileID: 27513943}
   - component: {fileID: 27513942}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: cm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23704,7 +23704,7 @@ GameObject:
   - component: {fileID: 126455465}
   - component: {fileID: 126455467}
   - component: {fileID: 126455466}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23953,7 +23953,7 @@ GameObject:
   - component: {fileID: 145158253}
   - component: {fileID: 145158252}
   - component: {fileID: 145158251}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Eingangsaufgang
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25136,7 +25136,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh25344
+  m_Name: pb_Mesh36574
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -25308,7 +25308,7 @@ GameObject:
   - component: {fileID: 255488324}
   - component: {fileID: 255488323}
   - component: {fileID: 255488322}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Terrasse
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26176,7 +26176,7 @@ GameObject:
   - component: {fileID: 398557060}
   - component: {fileID: 398557059}
   - component: {fileID: 398557061}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -26294,7 +26294,7 @@ GameObject:
   - component: {fileID: 487766523}
   - component: {fileID: 487766522}
   - component: {fileID: 487766521}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: cm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26422,7 +26422,7 @@ GameObject:
   - component: {fileID: 648813204}
   - component: {fileID: 648813203}
   - component: {fileID: 648813202}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Boden
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28780,7 +28780,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh25406
+  m_Name: pb_Mesh36642
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -29453,7 +29453,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 818523255}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cam Target
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29484,7 +29484,7 @@ GameObject:
   m_Component:
   - component: {fileID: 845943412}
   - component: {fileID: 845943411}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MiddleRig
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29543,7 +29543,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 845943410}
-  m_LocalRotation: {x: 0.27447534, y: 0.000000016545556, z: -0.000000004722727, w: 0.96159416}
+  m_LocalRotation: {x: 0.27447534, y: -0.000000016545558, z: 0.0000000047227275, w: 0.96159416}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -29562,7 +29562,7 @@ GameObject:
   - component: {fileID: 852963076}
   - component: {fileID: 852963075}
   - component: {fileID: 852963077}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Third Person Cam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29894,7 +29894,7 @@ GameObject:
   m_Component:
   - component: {fileID: 936167620}
   - component: {fileID: 936167619}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TopRig
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29953,7 +29953,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 936167618}
-  m_LocalRotation: {x: 0.307911, y: -0.002075282, z: 0.00067163503, w: 0.9514127}
+  m_LocalRotation: {x: 0.307911, y: -0.002075282, z: 0.0006716352, w: 0.9514127}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -30038,7 +30038,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.28856218, y: -0.000866402, z: 0.00029986154, w: 0.9574607}
+  m_LocalRotation: {x: 0.28856218, y: -0.0008664212, z: 0.0002998669, w: 0.9574607}
   m_LocalPosition: {x: 0, y: 1.8895366, z: -1.9219093}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -30850,7 +30850,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1439365504}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Grund
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30886,7 +30886,7 @@ GameObject:
   - component: {fileID: 1488618560}
   - component: {fileID: 1488618559}
   - component: {fileID: 1488618558}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: cm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31011,9 +31011,9 @@ GameObject:
   - component: {fileID: 1658842608}
   - component: {fileID: 1658842610}
   - component: {fileID: 1658842609}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spielertest
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32913,7 +32913,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh25360
+  m_Name: pb_Mesh36590
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -33081,7 +33081,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2134793374}
   - component: {fileID: 2134793373}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BottomRig
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33140,7 +33140,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2134793372}
-  m_LocalRotation: {x: 0.24103194, y: 0.000000015460028, z: -0.000000003839561, w: 0.9705172}
+  m_LocalRotation: {x: 0.24103194, y: 0.000000016699087, z: -0.0000000041472874, w: 0.9705172}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
