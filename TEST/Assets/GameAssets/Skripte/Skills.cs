@@ -20,48 +20,54 @@ public class Skills : MonoBehaviour
 
     private void Update()
     {
-        if(PlayerActions.experience == 10)
+        if(PlayerStats.experience == 10)
         {
             skillpoints++;
             skill_event();
-            PlayerActions.level_up();
+            level_up();
         }
     }
 
     private void skill_event()
     {
-        GameState newGameState = GameState.Skill;
+        GameStateManager.Instance.SetState(GameState.Skill);
         //UI interaktion für auswahl skill
         //on click GameState -> Gameplay
     }
 
+    private void level_up()
+    {
+        PlayerStats.experience = 0;
+        PlayerStats.level++;
+    }
+
     private void inc_max_lifepoints()
     {
-        PlayerActions.max_lifepoints += 10f;
+        PlayerStats.max_lifepoints += 10f;
     }
 
     private void inc_life_regeneration()
     {
-        PlayerActions.life_regeneration += 1f;
+        PlayerStats.life_regeneration += 1f;
     }
 
     private void inc_weapon_damage()
     {
-        PlayerActions.weapon_damage += 2f;
+        PlayerStats.weapon_damage += 2f;
     }
 
     private void inc_ability_damage()
     {
-        PlayerActions.ability_damage += 5f;
+        PlayerStats.ability_damage += 5f;
     }
 
     private void inc_resistence()
     {
-        PlayerActions.resistence += 5f;
+        PlayerStats.resistence += 5f;
     }
 
     private void inc_loot()
     {
-        PlayerActions.luck += 5f;
+        PlayerStats.luck += 5f;
     }
 }

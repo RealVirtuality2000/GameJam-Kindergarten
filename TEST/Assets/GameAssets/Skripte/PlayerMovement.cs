@@ -12,6 +12,16 @@ public class PlayerMovement : MonoBehaviour
     public float smooth_time = 0.1f;
     float turnSmoothVelocity;
 
+    private void Awake()
+    {
+        GameStateManager.Instance.OnGameStateChanged += OnGameStateChanged;
+    }
+
+    private void OnDestroy()
+    {
+        GameStateManager.Instance.OnGameStateChanged -= OnGameStateChanged;
+    }
+
     //public float speed = 3f;
     void Update()
     {
@@ -30,5 +40,10 @@ public class PlayerMovement : MonoBehaviour
         }
 
         //transform.position += new Vector3(Input.GetAxisRaw("Horizontal"), 0f, Input.GetAxisRaw("Vertical")) * speed * Time.deltaTime;
+    }
+
+    private void OnGameStateChanged(GameState newGameState)
+    {
+        enabled = newGameState == GameState.Gameplay;
     }
 }
