@@ -4,15 +4,24 @@ using UnityEngine;
 
 public class PlayerActions : MonoBehaviour
 {
-    public float lifepoints;
-    public float max_lifepoints = 100f;
-    public float life_regeneration = 0.2f;
+    public static float lifepoints;
+    public static float max_lifepoints = 100f;
+    public static float life_regeneration = 0.5f;
 
-    public float weapon_damage;
-    public float ability_damage;
+    public static float weapon_damage;
+    public static float ability_damage;
 
-    public float toughness = 0f;
-    public float resistence = 0f;
+    public static float resistence = 0f; //weniger Fallenschaden
+    public static float luck = 0f; //chance mehr candy zu bekommen
+
+    public static int candy = 0; //Item zum Heilen
+
+    public static int experience = 0;
+
+    private void Awake()
+    {
+        DontDestroyOnLoad(this);
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -25,7 +34,7 @@ public class PlayerActions : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(lifepoints);
+       
     }
 
     private void attack()
@@ -40,6 +49,12 @@ public class PlayerActions : MonoBehaviour
 
     private void use_item()
     {
+        candy--;
+        lifepoints += 10f;
+    }
 
+    public static void level_up()
+    {
+        experience = 0;
     }
 }
