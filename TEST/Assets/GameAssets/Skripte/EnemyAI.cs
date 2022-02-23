@@ -8,7 +8,7 @@ using Random = UnityEngine.Random;
 
 public class EnemyAI : MonoBehaviour
 {
-    public NavMeshAgent Agent;
+    private NavMeshAgent Agent;
 
     private Transform Player;
 
