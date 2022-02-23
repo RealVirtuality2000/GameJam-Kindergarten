@@ -6,6 +6,10 @@ public class PlayerActions : MonoBehaviour
 {
     private GameObject Player;
 
+    public Transform attack_point;
+    public float attack_range = 2f;
+    public LayerMask enemy_layer;
+
     private void Awake()
     {
         GameStateManager.Instance.OnGameStateChanged += OnGameStateChanged;
@@ -25,7 +29,10 @@ public class PlayerActions : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-       
+       if (Input.GetMouseButtonDown(0))
+        {
+            attack();
+        }
     }
 
     private void OnGameStateChanged(GameState newGameState)
@@ -37,7 +44,18 @@ public class PlayerActions : MonoBehaviour
     {
         //animation
         //range detection
+        Collider[] hit_enemies = Physics.OverlapSphere(attack_point.position, attack_range, enemy_layer);
         //apply damage
+        foreach(Collider enemy in hit_enemies)
+        {
+            Debug.Log("we hit " + enemy.name);
+        }
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        if (attack_point == null) return;
+        Gizmos.DrawWireSphere(attack_point.position, attack_range);
     }
 
     private void use_ability()
