@@ -4,42 +4,72 @@ using UnityEngine;
 
 public class PlayerActions : MonoBehaviour
 {
-    public float lifepoints;
-    public float max_lifepoints = 100f;
-    public float life_regeneration = 0.2f;
+    private GameObject Player;
 
-    public float weapon_damage;
-    public float ability_damage;
+    public Transform attack_point;
+    public float attack_range = 2f;
+    public LayerMask enemy_layer;
 
-    public float toughness = 0f;
-    public float resistence = 0f;
+    private void Awake()
+    {
+        GameStateManager.Instance.OnGameStateChanged += OnGameStateChanged;
+    }
+
+    private void OnDestroy()
+    {
+        GameStateManager.Instance.OnGameStateChanged -= OnGameStateChanged;
+    }
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        lifepoints = max_lifepoints;
-        //weapon_damage = GetComponent<Weapon>.Damage;
-        //ability_damage = GetComponent<Ability>.Damage;
+        Player = GameObject.Find("Player");
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        Debug.Log(lifepoints);
+       if (Input.GetMouseButtonDown(0))
+        {
+            attack();
+        }
+    }
+
+    private void OnGameStateChanged(GameState newGameState)
+    {
+        enabled = newGameState == GameState.Gameplay;
     }
 
     private void attack()
     {
+        //animation
+        //range detection
+        Collider[] hit_enemies = Physics.OverlapSphere(attack_point.position, attack_range, enemy_layer);
+        //apply damage
+        foreach(Collider enemy in hit_enemies)
+        {
+            Debug.Log("we hit " + enemy.name);
+        }
+    }
 
+    private void OnDrawGizmosSelected()
+    {
+        if (attack_point == null) return;
+        Gizmos.DrawWireSphere(attack_point.position, attack_range);
     }
 
     private void use_ability()
     {
-
+        //animation
+        //range detection
+        //apply damage
     }
 
     private void use_item()
     {
-
+        //animation
+        PlayerStats.candy--;
+        PlayerStats.lifepoints += 10f;
     }
+
 }

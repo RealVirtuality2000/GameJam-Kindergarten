@@ -8,7 +8,7 @@ using Random = UnityEngine.Random;
 
 public class EnemyAI : MonoBehaviour
 {
-    public NavMeshAgent Agent;
+    private NavMeshAgent Agent;
 
     private Transform Player;
 
@@ -40,6 +40,13 @@ public class EnemyAI : MonoBehaviour
     {
         Player = GameObject.Find("Player").transform;
         Agent = GetComponent<NavMeshAgent>();
+
+        GameStateManager.Instance.OnGameStateChanged += OnGameStateChanged;
+    }
+
+    private void OnDestroy()
+    {
+        GameStateManager.Instance.OnGameStateChanged -= OnGameStateChanged;
     }
 
     private void Update()
@@ -53,6 +60,10 @@ public class EnemyAI : MonoBehaviour
         if (playerInAttackRange && playerInSightRange) { AttackPlayer(); Debug.Log("Attack"); }
     }
 
+    private void OnGameStateChanged(GameState newGameState)
+    {
+        enabled = newGameState == GameState.Gameplay;
+    }
     private void Patroling()
     {
         if (!walkPointSet) SearchWalkPoint();

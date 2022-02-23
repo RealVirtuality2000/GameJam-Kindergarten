@@ -15,8 +15,8 @@ public class Bubblelogic : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Player"))
         {
-            PlayerStats.HP -= 10;
-            Debug.Log(PlayerStats.HP);
+            PlayerStats.lifepoints -= 10;
+            Debug.Log(PlayerStats.lifepoints);
         }
         Destroy(gameObject);
         
