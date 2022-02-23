@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BossHealth : MonoBehaviour
 {
-    private int Health = 500;
+    private float Health = 500f;
     public bool isInvulnerable = false;
     public HealthbarSkript healthbar;
 
@@ -12,7 +12,7 @@ public class BossHealth : MonoBehaviour
     {
         healthbar.SetMaxHealth(Health);
     }
-    public void TakeDamage(int Damage)
+    public void TakeDamage(float Damage)
     {
         if (isInvulnerable) return;
 
