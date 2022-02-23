@@ -26276,13 +26276,15 @@ GameObject:
   - component: {fileID: 398557060}
   - component: {fileID: 398557059}
   - component: {fileID: 398557061}
+  - component: {fileID: 398557062}
+  - component: {fileID: 398557063}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!143 &398557056
 CharacterController:
   m_ObjectHideFlags: 0
@@ -26381,6 +26383,34 @@ MonoBehaviour:
   enemy_layer:
     serializedVersion: 2
     m_Bits: 256
+--- !u!114 &398557062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 398557055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f55338eea0bf00418fdcb8a38b57a21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  random_skill_1: 0
+  random_skill_2: 0
+  random_skill_3: 0
+  skill_ui: {fileID: 838872179}
+--- !u!114 &398557063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 398557055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c65b1f11e6524f84f9407493501fd4d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &404850049
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29199,6 +29229,7 @@ GameObject:
   - component: {fileID: 743944504}
   - component: {fileID: 743944503}
   - component: {fileID: 743944506}
+  - component: {fileID: 743944507}
   m_Layer: 5
   m_Name: Choose Skill 3
   m_TagString: Untagged
@@ -29331,6 +29362,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4c6ad1aaac2d054d93470e92107097b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  img: {fileID: 743944504}
+  hp_inc: {fileID: 0}
+  reg_inc: {fileID: 0}
+--- !u!114 &743944507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 743944501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 193c3a95658819a4fac5accc9d318d73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  img: {fileID: 0}
+  resistence_inc: {fileID: 0}
+  loot_inc: {fileID: 0}
 --- !u!43 &779737099
 Mesh:
   m_ObjectHideFlags: 0
@@ -29959,7 +30008,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.2543352, y: 1}
+    m_SensorSize: {x: 1.7181373, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -30031,7 +30080,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.2543352, y: 1}
+    m_SensorSize: {x: 1.7181373, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -30369,7 +30418,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.2543352, y: 1}
+    m_SensorSize: {x: 1.7181373, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -30385,7 +30434,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 936167618}
-  m_LocalRotation: {x: 0.30790964, y: -0.0035087392, z: 0.0011355528, w: 0.9514085}
+  m_LocalRotation: {x: 0.3079105, y: -0.002674212, z: 0.00086547015, w: 0.9514112}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -30470,7 +30519,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.28856283, y: -0.0014648596, z: 0.00050699135, w: 0.9574597}
+  m_LocalRotation: {x: 0.28856245, y: -0.0011164492, z: 0.00038639948, w: 0.9574604}
   m_LocalPosition: {x: 0.6497767, y: 1.5099688, z: -0.8789487}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -30594,7 +30643,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 968025080}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ButtonClick, Assembly-CSharp
         m_MethodName: was_clicked
         m_Mode: 1
@@ -30653,9 +30702,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 968025075}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4c6ad1aaac2d054d93470e92107097b, type: 3}
+  m_Script: {fileID: 11500000, guid: 0be0dedfadf9ef545909cf32cd7e7ec5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  img: {fileID: 968025078}
+  weapon_dmg_inc: {fileID: 0}
+  ability_dmg_inc: {fileID: 0}
 --- !u!43 &1024628297
 Mesh:
   m_ObjectHideFlags: 0
@@ -31036,6 +31088,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4c6ad1aaac2d054d93470e92107097b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  img: {fileID: 1145650161}
+  hp_inc: {fileID: 0}
+  reg_inc: {fileID: 0}
 --- !u!1 &1190462733
 GameObject:
   m_ObjectHideFlags: 0
@@ -34320,7 +34375,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.2543352, y: 1}
+    m_SensorSize: {x: 1.7181373, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0

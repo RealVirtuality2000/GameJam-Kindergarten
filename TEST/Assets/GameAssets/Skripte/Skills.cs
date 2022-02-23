@@ -7,8 +7,12 @@ public class Skills : MonoBehaviour
     //private GameObject Player;
 
     private static int skillpoints = 0;
+    public int random_skill_1;
+    public int random_skill_2;
+    public int random_skill_3;
 
     public GameObject skill_ui;
+
     private void Awake()
     {
         DontDestroyOnLoad(this);
@@ -18,6 +22,7 @@ public class Skills : MonoBehaviour
     private void Start()
     {
         //Player = GameObject.Find("Player");
+        skill_event(); //zum testen
     }
 
     private void Update()
@@ -33,9 +38,12 @@ public class Skills : MonoBehaviour
     private void skill_event()
     {
         GameStateManager.Instance.SetState(GameState.Skill);
+
+        random_skill_1 = Random.Range(0, 1);
+        random_skill_2 = Random.Range(2, 3);
+        random_skill_3 = Random.Range(4, 5);
+
         skill_ui.SetActive(true);
-        //UI interaktion für auswahl skill
-        //on click GameState -> Gameplay
     }
 
     private void level_up()
@@ -44,32 +52,32 @@ public class Skills : MonoBehaviour
         PlayerStats.level++;
     }
 
-    private void inc_max_lifepoints()
+    public void inc_max_lifepoints() // skill 0
     {
         PlayerStats.max_lifepoints += 10f;
     }
 
-    private void inc_life_regeneration()
+    public void inc_life_regeneration() // skill 1
     {
         PlayerStats.life_regeneration += 1f;
     }
 
-    private void inc_weapon_damage()
+    public void inc_weapon_damage() // skill 2
     {
         PlayerStats.weapon_damage += 2f;
     }
 
-    private void inc_ability_damage()
+    public void inc_ability_damage() // skill 3
     {
         PlayerStats.ability_damage += 5f;
     }
 
-    private void inc_resistence()
+    public void inc_resistence() // skill 4
     {
         PlayerStats.resistence += 5f;
     }
 
-    private void inc_loot()
+    public void inc_loot() // skill 5
     {
         PlayerStats.luck += 5f;
     }

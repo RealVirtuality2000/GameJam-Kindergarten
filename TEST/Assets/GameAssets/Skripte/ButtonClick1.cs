@@ -4,10 +4,10 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class ButtonClick : MonoBehaviour,IPointerDownHandler,IPointerUpHandler
+public class ButtonClick1 : MonoBehaviour,IPointerDownHandler,IPointerUpHandler
 {
     [SerializeField] private Image img;
-    [SerializeField] private Sprite hp_inc, reg_inc;
+    [SerializeField] private Sprite weapon_dmg_inc, ability_dmg_inc;
     public void OnPointerDown(PointerEventData eventData)
     {
         //throw new System.NotImplementedException();
@@ -20,32 +20,31 @@ public class ButtonClick : MonoBehaviour,IPointerDownHandler,IPointerUpHandler
 
     private int skill;
 
-
     private void OnEnable()
     {
-        skill = GameObject.Find("Player").GetComponent<Skills>().random_skill_1;
-        //skill_2 = GameObject.Find("Player").GetComponent<Skills>().random_skill_2;
+        //skill_1 = GameObject.Find("Player").GetComponent<Skills>().random_skill_1;
+        skill = GameObject.Find("Player").GetComponent<Skills>().random_skill_2;
         //skill_3 = GameObject.Find("Player").GetComponent<Skills>().random_skill_3;
-        switch (skill)
-        {
-            case 0:
-                GetComponent<Image>().color = Color.red;
-                img.sprite = hp_inc;
-                break;
-            case 1:
-                GetComponent<Image>().color = Color.green;
-                img.sprite = reg_inc;
-                break;
-        }
-        //switch (skill_2)
+        //switch (skill_1)
         //{
-        //    case 2:
-        //        GetComponent<Image>().color = Color.blue;
+        //    case 0:
+        //        GetComponent<Image>().color = Color.red;
         //        break;
-        //    case 3:
-        //        GetComponent<Image>().color = Color.yellow;
+        //    case 1:
+        //        GetComponent<Image>().color = Color.green;
         //        break;
         //}
+        switch (skill)
+        {
+            case 2:
+                GetComponent<Image>().color = Color.blue;
+                img.sprite = weapon_dmg_inc;
+                break;
+            case 3:
+                GetComponent<Image>().color = Color.yellow;
+                img.sprite = ability_dmg_inc;
+                break;
+        }
         //switch (skill_3)
         //{
         //    case 4:
@@ -64,10 +63,10 @@ public class ButtonClick : MonoBehaviour,IPointerDownHandler,IPointerUpHandler
         switch (skill)
         {
             case 0:
-                GameObject.Find("Player").GetComponent<Skills>().inc_max_lifepoints();
+                GameObject.Find("Player").GetComponent<Skills>().inc_weapon_damage();
                 break;
             case 1:
-                GameObject.Find("Player").GetComponent<Skills>().inc_life_regeneration();
+                GameObject.Find("Player").GetComponent<Skills>().inc_ability_damage();
                 break;
         }
 
