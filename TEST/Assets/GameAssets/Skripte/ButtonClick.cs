@@ -20,6 +20,7 @@ public class ButtonClick : MonoBehaviour,IPointerDownHandler,IPointerUpHandler
     {
         Debug.Log(gameObject.name + " clicked!");
         gameObject.transform.parent.gameObject.SetActive(false);
+        GameStateManager.Instance.SetState(GameState.Gameplay);
     }
 
 }

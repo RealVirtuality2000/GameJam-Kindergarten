@@ -7,6 +7,8 @@ public class Skills : MonoBehaviour
     //private GameObject Player;
 
     private static int skillpoints = 0;
+
+    public GameObject skill_ui;
     private void Awake()
     {
         DontDestroyOnLoad(this);
@@ -31,6 +33,7 @@ public class Skills : MonoBehaviour
     private void skill_event()
     {
         GameStateManager.Instance.SetState(GameState.Skill);
+        skill_ui.SetActive(true);
         //UI interaktion für auswahl skill
         //on click GameState -> Gameplay
     }
