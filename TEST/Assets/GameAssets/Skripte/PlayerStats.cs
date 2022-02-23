@@ -19,6 +19,8 @@ public class PlayerStats : MonoBehaviour
     public static int experience = 0;
     public static int level = 1;
 
+    public HealthbarSkript healthbar;
+
     private void Awake()
     {
         DontDestroyOnLoad(this);
@@ -28,6 +30,7 @@ public class PlayerStats : MonoBehaviour
     void Start()
     {
         lifepoints = max_lifepoints;
+        healthbar.SetMaxHealth(lifepoints);
         //weapon_damage = GetComponent<Weapon>.Damage;
         //ability_damage = GetComponent<Ability>.Damage;
     }
