@@ -24143,129 +24143,9 @@ MonoBehaviour:
   m_Mesh: {fileID: 1207404680}
   m_VersionIndex: 15673
   m_IsSelectable: 1
-  m_SelectedFaces: 090000001200000026010000280100002a0100002d0100002e0100003501000036010000380100003b0100003c010000400100004101000042010000
-  m_SelectedEdges:
-  - a: 37
-    b: 38
-  - a: 38
-    b: 39
-  - a: 39
-    b: 36
-  - a: 36
-    b: 37
-  - a: 73
-    b: 74
-  - a: 72
-    b: 73
-  - a: 74
-    b: 75
-  - a: 75
-    b: 72
-  - a: 1189
-    b: 1190
-  - a: 1190
-    b: 1191
-  - a: 1191
-    b: 1192
-  - a: 1192
-    b: 1189
-  - a: 1197
-    b: 1198
-  - a: 1198
-    b: 1199
-  - a: 1199
-    b: 1200
-  - a: 1200
-    b: 1197
-  - a: 1205
-    b: 1206
-  - a: 1206
-    b: 1207
-  - a: 1207
-    b: 1208
-  - a: 1208
-    b: 1205
-  - a: 1217
-    b: 1218
-  - a: 1218
-    b: 1219
-  - a: 1219
-    b: 1220
-  - a: 1220
-    b: 1217
-  - a: 1221
-    b: 1222
-  - a: 1222
-    b: 1223
-  - a: 1223
-    b: 1224
-  - a: 1224
-    b: 1221
-  - a: 1249
-    b: 1250
-  - a: 1250
-    b: 1251
-  - a: 1251
-    b: 1252
-  - a: 1252
-    b: 1249
-  - a: 1253
-    b: 1254
-  - a: 1254
-    b: 1255
-  - a: 1255
-    b: 1256
-  - a: 1256
-    b: 1253
-  - a: 1261
-    b: 1262
-  - a: 1262
-    b: 1263
-  - a: 1263
-    b: 1264
-  - a: 1264
-    b: 1261
-  - a: 1273
-    b: 1274
-  - a: 1274
-    b: 1275
-  - a: 1275
-    b: 1276
-  - a: 1276
-    b: 1273
-  - a: 1277
-    b: 1278
-  - a: 1278
-    b: 1279
-  - a: 1279
-    b: 1280
-  - a: 1280
-    b: 1277
-  - a: 1293
-    b: 1294
-  - a: 1294
-    b: 1295
-  - a: 1295
-    b: 1296
-  - a: 1296
-    b: 1293
-  - a: 1297
-    b: 1298
-  - a: 1298
-    b: 1299
-  - a: 1299
-    b: 1300
-  - a: 1300
-    b: 1297
-  - a: 1301
-    b: 1302
-  - a: 1302
-    b: 1303
-  - a: 1303
-    b: 1304
-  - a: 1304
-    b: 1301
-  m_SelectedVertices: 27000000250000002600000024000000490000004a000000480000004b000000a7040000a5040000a6040000a8040000af040000ad040000ae040000b0040000b7040000b5040000b6040000b8040000c3040000c1040000c2040000c4040000c7040000c5040000c6040000c8040000e3040000e1040000e2040000e4040000e7040000e5040000e6040000e8040000ef040000ed040000ee040000f0040000fb040000f9040000fa040000fc040000ff040000fd040000fe040000000500000f0500000d0500000e050000100500001305000011050000120500001405000017050000150500001605000018050000
+  m_SelectedFaces: 
+  m_SelectedEdges: []
+  m_SelectedVertices: 
 --- !u!1 &110875381
 GameObject:
   m_ObjectHideFlags: 0
@@ -30963,7 +30843,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 845943410}
-  m_LocalRotation: {x: 0.28625864, y: 1e-45, z: -0, w: 0.9581524}
+  m_LocalRotation: {x: 0.28625864, y: -3e-45, z: 1e-45, w: 0.9581524}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -32271,7 +32151,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh25124
+  m_Name: pb_Mesh27990
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -35755,7 +35635,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2134793372}
-  m_LocalRotation: {x: 0.25292736, y: -0.000000008323461, z: 0.000000002175982, w: 0.9674853}
+  m_LocalRotation: {x: 0.25292736, y: 0.000000008323461, z: -0.000000002175982, w: 0.9674853}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
