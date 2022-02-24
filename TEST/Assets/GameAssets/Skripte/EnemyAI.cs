@@ -14,6 +14,8 @@ public class EnemyAI : MonoBehaviour
 
     public LayerMask Ground, ThePlayer;
 
+    
+
 
     //Patrolling
 
@@ -40,6 +42,7 @@ public class EnemyAI : MonoBehaviour
     {
         Player = GameObject.Find("Player").transform;
         Agent = GetComponent<NavMeshAgent>();
+        
 
         GameStateManager.Instance.OnGameStateChanged += OnGameStateChanged;
     }

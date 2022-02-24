@@ -5,10 +5,12 @@ using UnityEngine;
 public class Bubblelogic : MonoBehaviour
 {
     public float speed = 5;
+    private HealthbarSkript healthbar;
 
     private void FixedUpdate()
     {
         transform.position += transform.forward * (speed * Time.deltaTime);
+        healthbar = GameObject.Find("HealthbarPlayer").GetComponent<HealthbarSkript>();
     }
     
     private void OnCollisionEnter(Collision collision)
@@ -16,6 +18,7 @@ public class Bubblelogic : MonoBehaviour
         if(collision.gameObject.CompareTag("Player"))
         {
             PlayerStats.lifepoints -= 10;
+            healthbar.SetHealth(PlayerStats.lifepoints);
             Debug.Log(PlayerStats.lifepoints);
         }
         Destroy(gameObject);
