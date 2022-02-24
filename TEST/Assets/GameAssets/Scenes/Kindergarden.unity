@@ -29165,8 +29165,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ButtonClick, Assembly-CSharp
+      - m_Target: {fileID: 743944506}
+        m_TargetAssemblyTypeName: ButtonClick2, Assembly-CSharp
         m_MethodName: was_clicked
         m_Mode: 1
         m_Arguments:
@@ -30503,8 +30503,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ButtonClick, Assembly-CSharp
+      - m_Target: {fileID: 968025080}
+        m_TargetAssemblyTypeName: ButtonClick1, Assembly-CSharp
         m_MethodName: was_clicked
         m_Mode: 1
         m_Arguments:

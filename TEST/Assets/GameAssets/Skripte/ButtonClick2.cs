@@ -62,11 +62,13 @@ public class ButtonClick2 : MonoBehaviour,IPointerDownHandler,IPointerUpHandler
 
         switch (skill)
         {
-            case 0:
+            case 4:
                 GameObject.Find("Player").GetComponent<Skills>().inc_resistence();
+                Debug.Log(PlayerStats.resistence);
                 break;
-            case 1:
+            case 5:
                 GameObject.Find("Player").GetComponent<Skills>().inc_loot();
+                Debug.Log(PlayerStats.luck);
                 break;
         }
 
