@@ -62,11 +62,13 @@ public class ButtonClick1 : MonoBehaviour,IPointerDownHandler,IPointerUpHandler
 
         switch (skill)
         {
-            case 0:
+            case 2:
                 GameObject.Find("Player").GetComponent<Skills>().inc_weapon_damage();
+                Debug.Log(PlayerStats.weapon_damage);
                 break;
-            case 1:
+            case 3:
                 GameObject.Find("Player").GetComponent<Skills>().inc_ability_damage();
+                Debug.Log(PlayerStats.ability_damage);
                 break;
         }
 
