@@ -39,9 +39,9 @@ public class Skills : MonoBehaviour
     {
         GameStateManager.Instance.SetState(GameState.Skill);
 
-        random_skill_1 = Random.Range(0, 1);
-        random_skill_2 = Random.Range(2, 3);
-        random_skill_3 = Random.Range(4, 5);
+        random_skill_1 = Random.Range(0, 2);
+        random_skill_2 = Random.Range(2, 4);
+        random_skill_3 = Random.Range(4, 6);
 
         skill_ui.SetActive(true);
     }
