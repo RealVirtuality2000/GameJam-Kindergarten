@@ -6,16 +6,19 @@ public class PlayerMovement : MonoBehaviour
 {
     public CharacterController controller;
     private Transform cam;
+    private Vector2 turn;
 
     public float speed = 6f;
 
-    public float smooth_time = 0.1f;
+    public float smooth_time = 0.3f;
     float turnSmoothVelocity;
 
     private void Awake()
     {
         GameStateManager.Instance.OnGameStateChanged += OnGameStateChanged;
         cam = FindObjectOfType<Camera>().transform;
+
+        //Cursor.lockState = CursorLockMode.Locked;
     }
 
     private void OnDestroy()
@@ -41,6 +44,10 @@ public class PlayerMovement : MonoBehaviour
         }
 
         //transform.position += new Vector3(Input.GetAxisRaw("Horizontal"), 0f, Input.GetAxisRaw("Vertical")) * speed * Time.deltaTime;
+
+        //turn.x += Input.GetAxis("Mouse X");
+        //turn.y += Input.GetAxis("Mouse Y");
+        //transform.localRotation = Quaternion.Euler(0f, turn.x, 0f);
     }
 
     private void OnGameStateChanged(GameState newGameState)
