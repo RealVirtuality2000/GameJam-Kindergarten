@@ -25832,7 +25832,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh28176
+  m_Name: pb_Mesh34402
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -27570,9 +27570,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -5721714460430908877, guid: 8ac4efcd5f7dab040bda8fa1c0a83e1b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -6478536213147159724, guid: 8ac4efcd5f7dab040bda8fa1c0a83e1b, type: 3}
+    - target: {fileID: -2466741665685069695, guid: 8ac4efcd5f7dab040bda8fa1c0a83e1b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 451073451779226413, guid: 8ac4efcd5f7dab040bda8fa1c0a83e1b, type: 3}
+      propertyPath: m_ReceiveGI
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 451073451779226413, guid: 8ac4efcd5f7dab040bda8fa1c0a83e1b, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 8ac4efcd5f7dab040bda8fa1c0a83e1b, type: 3}
       propertyPath: m_Name
       value: Lichterkette
+      objectReference: {fileID: 0}
+    - target: {fileID: 6324240423935976452, guid: 8ac4efcd5f7dab040bda8fa1c0a83e1b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ac4efcd5f7dab040bda8fa1c0a83e1b, type: 3}
@@ -27808,7 +27828,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh28132
+  m_Name: pb_Mesh34346
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -29724,7 +29744,7 @@ GameObject:
   - component: {fileID: 395394496}
   - component: {fileID: 395394497}
   m_Layer: 0
-  m_Name: Point Light (1)
+  m_Name: Wolkenlampe Raum 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30262,6 +30282,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -5721714460430908877, guid: 8ac4efcd5f7dab040bda8fa1c0a83e1b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -6478536213147159724, guid: 8ac4efcd5f7dab040bda8fa1c0a83e1b, type: 3}
     - target: {fileID: 919132149155446097, guid: 8ac4efcd5f7dab040bda8fa1c0a83e1b, type: 3}
       propertyPath: m_Name
       value: Lichterkette (2)
@@ -35746,7 +35770,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh28106
+  m_Name: pb_Mesh34320
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -36668,6 +36692,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -5721714460430908877, guid: 8ac4efcd5f7dab040bda8fa1c0a83e1b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -6478536213147159724, guid: 8ac4efcd5f7dab040bda8fa1c0a83e1b, type: 3}
     - target: {fileID: 919132149155446097, guid: 8ac4efcd5f7dab040bda8fa1c0a83e1b, type: 3}
       propertyPath: m_Name
       value: Lichterkette (3)
@@ -37072,7 +37100,7 @@ GameObject:
   - component: {fileID: 1643877207}
   - component: {fileID: 1643877208}
   m_Layer: 0
-  m_Name: Point Light
+  m_Name: Lampe Raum 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37479,6 +37507,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 451073451779226413, guid: 8ac4efcd5f7dab040bda8fa1c0a83e1b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 4874126678125670354, guid: 8ac4efcd5f7dab040bda8fa1c0a83e1b, type: 3}
     - target: {fileID: 919132149155446097, guid: 8ac4efcd5f7dab040bda8fa1c0a83e1b, type: 3}
       propertyPath: m_Name
       value: Lichterkette (1)
@@ -39156,7 +39188,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh28336
+  m_Name: pb_Mesh34580
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
