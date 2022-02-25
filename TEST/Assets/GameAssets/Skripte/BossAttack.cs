@@ -13,8 +13,8 @@ public class BossAttack : MonoBehaviour
     private int Damage = 20;
 
     //States
-    public float AttackRange;
-    private bool playerInAttackRange;
+    private float AttackRange = 7;
+    public bool playerInAttackRange;
 
     //Attacking
     public float timeBetweenAttacks;
