@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: "Assets/GameAssets/Scenes/Options/Men\xFC.unity"
+    guid: d45dc1d8c5013664a96e5e4b72ec5fab
+  - enabled: 1
+    path: Assets/GameAssets/Scenes/Kindergarden.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/GameAssets/Scenes/ImaginaryWorld.unity
+    guid: 9fe569f91be47f14b8fa7411013403d3
   m_configObjects: {}
