@@ -8,7 +8,7 @@ public class BossAttack : MonoBehaviour
     private NavMeshAgent Agent;
     private Transform Player;
     public LayerMask ThePlayer;
-    public HealthbarSkript healthPlayer;
+    private HealthbarSkript healthPlayer;
 
     private int Damage = 20;
 
@@ -23,10 +23,13 @@ public class BossAttack : MonoBehaviour
 
     private void Awake()
     {
-        Player = GameObject.Find("Player").transform;
         Agent = GetComponent<NavMeshAgent>();
     }
-
+    private void Start()
+    {
+        Player = GameObject.FindGameObjectWithTag("Player").transform;
+        healthPlayer = GameObject.Find("HealthbarPlayer").GetComponent<HealthbarSkript>();
+    }
     private void Update()
     {
         playerInAttackRange = Physics.CheckSphere(transform.position, AttackRange, ThePlayer);
