@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public CharacterController controller;
-    public Transform cam;
+    private Transform cam;
 
     public float speed = 6f;
 
@@ -15,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
     private void Awake()
     {
         GameStateManager.Instance.OnGameStateChanged += OnGameStateChanged;
+        cam = FindObjectOfType<Camera>().transform;
     }
 
     private void OnDestroy()
