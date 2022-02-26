@@ -26,5 +26,6 @@ public class MonkeyHealth : MonoBehaviour
     public void Die()
     {
         Destroy(gameObject);
+        PlayerStats.experience += 1;
     }
 }

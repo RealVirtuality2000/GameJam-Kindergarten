@@ -28,5 +28,6 @@ public class BossHealth : MonoBehaviour
     public void Die()
     {
         Destroy(gameObject);
+        PlayerStats.experience += 1;
     }
 }
