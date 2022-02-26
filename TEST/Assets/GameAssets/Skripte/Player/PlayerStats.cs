@@ -39,10 +39,9 @@ public class PlayerStats : MonoBehaviour
 
     private void Update()
     {
-        while(lifepoints < max_lifepoints)
+        if(lifepoints != max_lifepoints)
         {
             StartCoroutine(Regeneration());
-            
         }
     }
 
