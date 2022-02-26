@@ -10,21 +10,27 @@ public class PauseMenu : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
+        
         if (Input.GetKeyDown(KeyCode.Escape))
         {
+            GameState currentGameState = GameStateManager.Instance.CurrentGameState;
             if (GamePaused)
             {
                 Resume();
+                GameState newGameState = currentGameState == GameState.Pause ? GameState.Gameplay : GameState.Pause;
+                GameStateManager.Instance.SetState(newGameState);
             }
             else
             {
                 Pause();
+                GameState newGameState = currentGameState == GameState.Gameplay ? GameState.Pause : GameState.Gameplay;
+                GameStateManager.Instance.SetState(newGameState);
             }
 
-            GameState currentGameState = GameStateManager.Instance.CurrentGameState;
-            GameState newGameState = currentGameState == GameState.Gameplay ? GameState.Pause : GameState.Gameplay;
+            
+           
 
-            GameStateManager.Instance.SetState(newGameState);
+           
         }
     }
 
@@ -33,6 +39,9 @@ public class PauseMenu : MonoBehaviour
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         GamePaused = false;
+        GameState currentGameState = GameStateManager.Instance.CurrentGameState;
+        GameState newGameState = currentGameState == GameState.Pause ? GameState.Gameplay : GameState.Pause;
+        GameStateManager.Instance.SetState(newGameState);
     }
 
     private void Pause()
