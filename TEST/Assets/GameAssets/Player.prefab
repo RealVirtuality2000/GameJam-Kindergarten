@@ -405,7 +405,7 @@ CharacterController:
   m_Enabled: 1
   serializedVersion: 2
   m_Height: 2
-  m_Radius: 0.82
+  m_Radius: 0.5
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
@@ -708,7 +708,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7088836791170163496}
-  m_LocalRotation: {x: 0.00000003061486, y: -0.082480535, z: 0.0000000025337632, w: 0.9965927}
+  m_LocalRotation: {x: -1.4951243e-16, y: -0.08248053, z: -1.2374026e-17, w: 0.9965927}
   m_LocalPosition: {x: 1.6700001, y: 1.45, z: -6}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
@@ -745,7 +745,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.79653, y: 1}
+    m_SensorSize: {x: 1.8901274, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
