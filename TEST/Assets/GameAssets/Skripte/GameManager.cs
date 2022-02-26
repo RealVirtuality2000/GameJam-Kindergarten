@@ -18,15 +18,11 @@ public class GameManager : MonoBehaviour
 
 
         DontDestroyOnLoad(this);
-
-    }
-
-    private void Start()
-    {
         for (int i = 0; i < 10; i++)
         {
             DoorVariables.DoorsOpen[i] = false;
         }
     }
+
 
 }
