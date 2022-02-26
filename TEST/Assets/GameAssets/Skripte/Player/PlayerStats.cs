@@ -39,16 +39,17 @@ public class PlayerStats : MonoBehaviour
 
     private void Update()
     {
-        if(lifepoints != max_lifepoints)
+        while(lifepoints < max_lifepoints)
         {
             StartCoroutine(Regeneration());
-            Debug.Log("Leben + 1");
+            
         }
     }
 
     private IEnumerator Regeneration()
     {
-        lifepoints += life_regeneration;
         yield return new WaitForSeconds(5); 
+        lifepoints += life_regeneration;
+        Debug.Log("Leben + 1");
     }
 }
