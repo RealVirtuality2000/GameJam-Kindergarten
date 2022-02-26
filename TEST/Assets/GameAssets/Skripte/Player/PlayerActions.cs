@@ -33,6 +33,7 @@ public class PlayerActions : MonoBehaviour
        if (Input.GetMouseButtonDown(0))
         {
             attack();
+            FindObjectOfType<AudioManager>().Play("PlayerAttack");
         }
 
         if (Input.GetKeyDown(KeyCode.Q))
@@ -52,7 +53,9 @@ public class PlayerActions : MonoBehaviour
         //range detection
         Collider[] hit_enemies = Physics.OverlapSphere(attack_point.position, attack_range, enemy_layer);
         //apply damage
-        foreach(Collider enemy in hit_enemies)
+       
+
+        foreach (Collider enemy in hit_enemies)
         {
             Debug.Log("we hit " + enemy.name);
             if(enemy.name == "Monkey")
