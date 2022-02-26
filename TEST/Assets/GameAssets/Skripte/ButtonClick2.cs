@@ -22,27 +22,9 @@ public class ButtonClick2 : MonoBehaviour,IPointerDownHandler,IPointerUpHandler
 
     private void OnEnable()
     {
-        //skill_1 = GameObject.Find("Player").GetComponent<Skills>().random_skill_1;
-        //skill_2 = GameObject.Find("Player").GetComponent<Skills>().random_skill_2;
+        
         skill = GameObject.Find("SkillCanvas").GetComponent<Skills>().random_skill_3;
-        //switch (skill_1)
-        //{
-        //    case 0:
-        //        GetComponent<Image>().color = Color.red;
-        //        break;
-        //    case 1:
-        //        GetComponent<Image>().color = Color.green;
-        //        break;
-        //}
-        //switch (skill_2)
-        //{
-        //    case 2:
-        //        GetComponent<Image>().color = Color.blue;
-        //        break;
-        //    case 3:
-        //        GetComponent<Image>().color = Color.yellow;
-        //        break;
-        //}
+        
         switch (skill)
         {
             case 4:
