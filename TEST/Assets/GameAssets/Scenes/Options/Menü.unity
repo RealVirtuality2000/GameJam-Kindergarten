@@ -4949,37 +4949,37 @@ MonoBehaviour:
   sounds:
   - name: PlayerAttack
     clip: {fileID: 8300000, guid: 77175b69f7778dd499b1a4ebeb4e6279, type: 3}
-    volume: 0.635
+    volume: 0.7
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: Theme
     clip: {fileID: 8300000, guid: 074947401510a7941b867e1515f48e76, type: 3}
-    volume: 0.31
+    volume: 0.7
     pitch: 1
     loop: 1
     source: {fileID: 0}
   - name: Walk
     clip: {fileID: 8300000, guid: 5de550424dcf7464b8675ccc8d8c7c5e, type: 3}
-    volume: 0.5
+    volume: 0.7
     pitch: 1
     loop: 1
     source: {fileID: 0}
   - name: SoapBubble
     clip: {fileID: 8300000, guid: fc19d50dd0184c74fb067afd275086ee, type: 3}
-    volume: 0.46
+    volume: 0.7
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: SkillMenu
     clip: {fileID: 8300000, guid: b09ea9bb091118d499b2c4ddf36966e1, type: 3}
-    volume: 0.508
+    volume: 0.7
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: Button
     clip: {fileID: 8300000, guid: 183f031a99bcbdf4ea3d4ea108f9ca07, type: 3}
-    volume: 0.508
+    volume: 0.7
     pitch: 1
     loop: 0
     source: {fileID: 0}
