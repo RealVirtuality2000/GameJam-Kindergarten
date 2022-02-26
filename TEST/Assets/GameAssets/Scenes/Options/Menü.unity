@@ -3625,7 +3625,13 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 5de550424dcf7464b8675ccc8d8c7c5e, type: 3}
     volume: 0.5
     pitch: 1
-    loop: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: SoapBubble
+    clip: {fileID: 8300000, guid: fc19d50dd0184c74fb067afd275086ee, type: 3}
+    volume: 0.46
+    pitch: 1
+    loop: 0
     source: {fileID: 0}
 --- !u!1 &1338768445
 GameObject:
