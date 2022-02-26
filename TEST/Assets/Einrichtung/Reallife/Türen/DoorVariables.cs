@@ -5,6 +5,4 @@ using UnityEngine;
 public class DoorVariables : MonoBehaviour
 {
     public static bool[] DoorsOpen = new bool[10];
-
-   
 }
