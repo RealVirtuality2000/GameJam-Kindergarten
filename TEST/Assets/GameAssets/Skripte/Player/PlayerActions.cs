@@ -55,6 +55,14 @@ public class PlayerActions : MonoBehaviour
         foreach(Collider enemy in hit_enemies)
         {
             Debug.Log("we hit " + enemy.name);
+            if(enemy.name == "Monkey")
+            {
+                enemy.GetComponent<MonkeyHealth>().TakeDamage(PlayerStats.weapon_damage);
+            }else if(enemy.name == "Teacher")
+            {
+                enemy.GetComponent<BossHealth>().TakeDamage(PlayerStats.weapon_damage);
+            }
+            
         }
     }
 
