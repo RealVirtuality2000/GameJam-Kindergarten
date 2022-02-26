@@ -33,7 +33,7 @@ public class PlayerActions : MonoBehaviour
        if (Input.GetMouseButtonDown(0))
         {
             attack();
-            FindObjectOfType<AudioManager>().Play("PlayerAttack");
+           
         }
 
         if (Input.GetKeyDown(KeyCode.Q))
@@ -60,12 +60,15 @@ public class PlayerActions : MonoBehaviour
             Debug.Log("we hit " + enemy.name);
             if(enemy.name == "Monkey")
             {
+                FindObjectOfType<AudioManager>().Play("PlayerAttack");
                 enemy.GetComponent<MonkeyHealth>().TakeDamage(PlayerStats.weapon_damage);
             }else if(enemy.name == "Teacher")
             {
+                FindObjectOfType<AudioManager>().Play("PlayerAttack");
                 enemy.GetComponent<BossHealth>().TakeDamage(PlayerStats.weapon_damage);
             }else if(enemy.name == "Brokkoli")
             {
+                FindObjectOfType<AudioManager>().Play("PlayerAttack");
                 enemy.GetComponent<BrokkoliHealth>().TakeDamage(PlayerStats.weapon_damage);
             }
 
