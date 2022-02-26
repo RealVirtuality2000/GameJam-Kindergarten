@@ -8,7 +8,7 @@ public class PlayerStats : MonoBehaviour
     public static float max_lifepoints = 100f;
     public static float life_regeneration = 0.5f;
 
-    public static float weapon_damage;
+    public static float weapon_damage = 10;
     public static float ability_damage;
 
     public static float resistence = 0f; //weniger Fallenschaden
