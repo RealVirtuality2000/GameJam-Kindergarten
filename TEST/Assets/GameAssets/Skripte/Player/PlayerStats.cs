@@ -31,7 +31,7 @@ public class PlayerStats : MonoBehaviour
     {
         lifepoints = max_lifepoints;
         healthbar.SetMaxHealth(lifepoints);
-        InvokeRepeating("Reg")
+        InvokeRepeating("Reg", 0.1f, 5);
         
         //weapon_damage = GetComponent<Weapon>.Damage;
         //ability_damage = GetComponent<Ability>.Damage;
