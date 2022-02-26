@@ -20,6 +20,11 @@ public class PauseMenu : MonoBehaviour
             {
                 Pause();
             }
+
+            GameState currentGameState = GameStateManager.Instance.CurrentGameState;
+            GameState newGameState = currentGameState == GameState.Gameplay ? GameState.Pause : GameState.Gameplay;
+
+            GameStateManager.Instance.SetState(newGameState);
         }
     }
 
