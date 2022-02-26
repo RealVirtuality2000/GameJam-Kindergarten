@@ -37,14 +37,7 @@ public class PlayerStats : MonoBehaviour
         //ability_damage = GetComponent<Ability>.Damage;
     }
 
-    private void Update()
-    {
-        if (lifepoints <= 0)
-        {
-            GameObject.Find("GameOverScreen").SetActive(true);
-        }
-
-    }
+    
 
     private void Reg()
     {

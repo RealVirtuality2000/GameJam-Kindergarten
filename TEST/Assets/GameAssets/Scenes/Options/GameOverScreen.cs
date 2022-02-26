@@ -5,6 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class GameOverScreen : MonoBehaviour
 {
+    public GameObject GameOverUI;
+    private void Update()
+    {
+
+        if (PlayerStats.lifepoints <= 0)
+        {
+            GameOverUI.SetActive(true);
+        }
+
+    }
     public void Play()
     {
         PlayerStats.lifepoints = 100;
