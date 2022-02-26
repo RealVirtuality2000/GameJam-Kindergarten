@@ -29,12 +29,12 @@ public class Skills : MonoBehaviour
     private void Start()
     {
         //Player = GameObject.Find("Player");
-        //skill_event(); //zum testen
+        skill_event(); //zum testen
     }
 
     private void Update()
     {
-        if(PlayerStats.experience == 0)
+        if(PlayerStats.experience == 10)
         {
             skillpoints++;
             skill_event();
@@ -87,10 +87,10 @@ public class Skills : MonoBehaviour
 
         skill_ui.SetActive(true);
     }
-
+    
     private void level_up()
     {
-        PlayerStats.experience = -1;
+        PlayerStats.experience = 0;
         PlayerStats.level++;
     }
 

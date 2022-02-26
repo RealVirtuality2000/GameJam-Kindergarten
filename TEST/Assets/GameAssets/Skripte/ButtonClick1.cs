@@ -20,46 +20,22 @@ public class ButtonClick1 : MonoBehaviour,IPointerDownHandler,IPointerUpHandler
 
     private int skill;
 
-    private void OnEnable()
-    {
-        
-        skill = GameObject.Find("SkillCanvas").GetComponent<Skills>().random_skill_2;
-        
-        switch (skill)
-        {
-            case 2:
-                GetComponent<Image>().color = Color.blue;
-                img.sprite = weapon_dmg_inc;
-                break;
-            case 3:
-                GetComponent<Image>().color = Color.yellow;
-                img.sprite = inc_res;
-                break;
-        }
-        //switch (skill_3)
-        //{
-        //    case 4:
-        //        GetComponent<Image>().color = Color.cyan;
-        //        break;
-        //    case 5:
-        //        GetComponent<Image>().color = Color.magenta;
-        //        break;
-        //}
-    }
 
     public void was_clicked()
     {
+        
         Debug.Log(gameObject.name + " clicked!");
+        Debug.Log(skill + "ausgewählt");
 
         switch (skill)
         {
             case 2:
-                GameObject.Find("SkillCanvas").GetComponent<Skills>().inc_weapon_damage();
-                Debug.Log(PlayerStats.weapon_damage);
+                GameObject.FindWithTag("SkillCanvas").GetComponent<Skills>().inc_weapon_damage();
+                Debug.Log("inc weapon damage");
                 break;
             case 3:
-                GameObject.Find("SkillCanvas").GetComponent<Skills>().inc_resistance();
-                Debug.Log(PlayerStats.resistance);
+                GameObject.FindWithTag("SkillCanvas").GetComponent<Skills>().inc_resistance();
+                Debug.Log("inc resistance");
                 break;
         }
 

@@ -20,28 +20,6 @@ public class ButtonClick2 : MonoBehaviour,IPointerDownHandler,IPointerUpHandler
 
     private int skill;
 
-    private void OnEnable()
-    {
-        
-        skill = GameObject.Find("SkillCanvas").GetComponent<Skills>().random_skill_3;
-        
-        switch (skill)
-        {
-            case 4:
-                GetComponent<Image>().color = Color.cyan;
-                img.sprite = speed_inc;
-                break;
-            case 5:
-                GetComponent<Image>().color = Color.magenta;
-                img.sprite = loot;
-                break;
-            case 6:
-                GetComponent <Image>().color = Color.green;
-                img.sprite = inc_range;
-                break;
-        }
-    }
-
     public void was_clicked()
     {
         Debug.Log(gameObject.name + " clicked!");
@@ -49,16 +27,16 @@ public class ButtonClick2 : MonoBehaviour,IPointerDownHandler,IPointerUpHandler
         switch (skill)
         {
             case 4:
-                GameObject.Find("SkillCanvas").GetComponent<Skills>().inc_speed ();
-                Debug.Log(PlayerStats.speed);
+                GameObject.FindWithTag("SkillCanvas").GetComponent<Skills>().inc_speed ();
+                Debug.Log("inc speed");
                 break;
             case 5:
-                GameObject.Find("SkillCanvas").GetComponent<Skills>().loot();
-                Debug.Log(PlayerStats.candy);
+                GameObject.FindWithTag("SkillCanvas").GetComponent<Skills>().loot();
+                Debug.Log("loot");
                 break;
             case 6:
-                GameObject.Find("SkillCanvas").GetComponent<Skills>().inc_range();
-                Debug.Log(PlayerStats.range);
+                GameObject.FindWithTag("SkillCanvas").GetComponent<Skills>().inc_range();
+                Debug.Log("range");
                 break;
         }
 
