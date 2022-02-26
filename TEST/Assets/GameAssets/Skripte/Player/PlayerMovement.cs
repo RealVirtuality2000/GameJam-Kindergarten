@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     private Transform cam;
     private Vector2 turn;
 
+
     public float speed = 6f;
 
     public float smooth_time = 0.3f;
