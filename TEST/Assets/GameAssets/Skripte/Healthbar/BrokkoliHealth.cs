@@ -16,6 +16,7 @@ public class BrokkoliHealth : MonoBehaviour
     {
 
         Health -= Damage;
+        Debug.Log(Damage);
         healthbar.SetHealth(Health);
 
         if (Health <= 0)

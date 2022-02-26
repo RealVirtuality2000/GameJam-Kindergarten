@@ -13,7 +13,7 @@ public class BrokkoliAI : MonoBehaviour
 
     public LayerMask Ground, ThePlayer;
 
-    public HealthbarSkript HealthPlayer;
+    private HealthbarSkript HealthPlayer;
 
 
     //Patrolling
@@ -31,17 +31,16 @@ public class BrokkoliAI : MonoBehaviour
     public float sightRange, attackRange;
     private bool playerInSightRange, playerInAttackRange;
 
-    //Soap Bubble
-    public GameObject bubble;
-    public GameObject firePoint;
-    private GameObject Geschoss;
+   
 
 
     private void Awake()
     {
         Player = GameObject.FindWithTag("Player").transform;
+        HealthPlayer = GameObject.Find("HealthbarPlayer").GetComponent<HealthbarSkript>();
         Agent = GetComponent<NavMeshAgent>();
 
+        Debug.Log(HealthPlayer);
 
         GameStateManager.Instance.OnGameStateChanged += OnGameStateChanged;
     }
@@ -83,7 +82,7 @@ public class BrokkoliAI : MonoBehaviour
         float randomZ = Random.Range(-walkPointRange, walkPointRange);
         float randomX = Random.Range(-walkPointRange, walkPointRange);
         walkPoint = new Vector3(transform.position.x + randomX, transform.position.y, transform.position.z + randomZ);
-        Debug.Log(walkPoint);
+        //Debug.Log(walkPoint);
         if (Physics.Raycast(walkPoint, -transform.up, 2f, Ground))
         {
             walkPointSet = true;
@@ -113,7 +112,7 @@ public class BrokkoliAI : MonoBehaviour
         if (!alreadyAttacked)
         {
             //Attackcode Brokkoli
-            PlayerStats.lifepoints -= 5;
+            PlayerStats.lifepoints -= 5f;
             HealthPlayer.SetHealth(PlayerStats.lifepoints);
 
             alreadyAttacked = true;
