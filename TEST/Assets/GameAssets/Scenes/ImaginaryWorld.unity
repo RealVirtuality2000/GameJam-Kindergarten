@@ -772,6 +772,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StoneIndex: 2
+--- !u!64 &119015217
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 119015215}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 3103244249300500836, guid: f680cc8a59d24c541b60a3d558df8893, type: 3}
 --- !u!43 &131010332
 Mesh:
   m_ObjectHideFlags: 0
@@ -2327,6 +2341,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StoneIndex: 7
+--- !u!64 &457148964
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 457148962}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 3103244249300500836, guid: f680cc8a59d24c541b60a3d558df8893, type: 3}
 --- !u!43 &469368721
 Mesh:
   m_ObjectHideFlags: 0
@@ -31412,6 +31440,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StoneIndex: 1
+--- !u!64 &813975586
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 813975584}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 3103244249300500836, guid: f680cc8a59d24c541b60a3d558df8893, type: 3}
 --- !u!43 &874975988
 Mesh:
   m_ObjectHideFlags: 0
@@ -32095,6 +32137,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StoneIndex: 8
+--- !u!64 &970803882
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 970803880}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 3103244249300500836, guid: f680cc8a59d24c541b60a3d558df8893, type: 3}
 --- !u!43 &1024628297
 Mesh:
   m_ObjectHideFlags: 0
@@ -32391,6 +32447,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StoneIndex: 9
+--- !u!64 &1161217914
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1161217912}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 3103244249300500836, guid: f680cc8a59d24c541b60a3d558df8893, type: 3}
 --- !u!1001 &1325817141
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33261,6 +33331,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StoneIndex: 6
+--- !u!64 &1560218688
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1560218686}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 3103244249300500836, guid: f680cc8a59d24c541b60a3d558df8893, type: 3}
 --- !u!1001 &1564386485
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33353,6 +33437,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StoneIndex: 0
+--- !u!64 &1564386489
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1564386487}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 3103244249300500836, guid: f680cc8a59d24c541b60a3d558df8893, type: 3}
 --- !u!1 &1646246426
 GameObject:
   m_ObjectHideFlags: 0
@@ -35201,6 +35299,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StoneIndex: 4
+--- !u!64 &1663060656
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1663060654}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 3103244249300500836, guid: f680cc8a59d24c541b60a3d558df8893, type: 3}
 --- !u!1001 &1698579936
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35496,6 +35608,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StoneIndex: 3
+--- !u!64 &1887706177
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1887706175}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 3103244249300500836, guid: f680cc8a59d24c541b60a3d558df8893, type: 3}
 --- !u!43 &1906499627
 Mesh:
   m_ObjectHideFlags: 0
@@ -36483,3 +36609,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StoneIndex: 5
+--- !u!64 &2136975018
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2136975016}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 3103244249300500836, guid: f680cc8a59d24c541b60a3d558df8893, type: 3}
