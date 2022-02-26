@@ -15,6 +15,12 @@ public class GameManager : MonoBehaviour
             Instantiate(Player, null);
             GameIsRunning = true;
         }
+
+        for(int i = 0; i< 10; i++)
+        {
+            DoorVariables.DoorsOpen[i] = false;
+        }
+
     }
 
     

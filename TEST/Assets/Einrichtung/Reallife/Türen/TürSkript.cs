@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TürSkript : MonoBehaviour
 {
-
+    [SerializeField] private int DoorIndex;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,5 +27,6 @@ public class TürSkript : MonoBehaviour
         {
             transform.Rotate(0f, -90f, 0f);
         }
+        DoorVariables.DoorsOpen[DoorIndex] = !DoorVariables.DoorsOpen[DoorIndex];
     }
 }
