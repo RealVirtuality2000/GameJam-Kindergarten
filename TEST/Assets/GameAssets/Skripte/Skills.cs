@@ -1,10 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class Skills : MonoBehaviour
 {
     //private GameObject Player;
+
+    [SerializeField] private Button img1;
+    [SerializeField] private Button img2;
+    [SerializeField] private Button img3;
+    [SerializeField] private Sprite hp_inc, reg_inc, weapon_dmg_inc, inc_res, speed_inc, loot_img, inc_range_img;
 
     private static int skillpoints = 0;
     public int random_skill_1;
@@ -40,8 +47,43 @@ public class Skills : MonoBehaviour
         GameStateManager.Instance.SetState(GameState.Skill);
 
         random_skill_1 = Random.Range(0, 2);
-        random_skill_2 = Random.Range(2, 5);
-        random_skill_3 = Random.Range(5, 8);
+        Debug.Log(random_skill_1);
+        switch(random_skill_1)
+        {
+            case 0:
+                img1.GetComponent<Image>().sprite = hp_inc;
+                break;
+            case 1:
+                img1.GetComponent<Image>().sprite = reg_inc;
+                break;
+        }
+
+        random_skill_2 = Random.Range(2, 4);
+        switch (random_skill_2)
+        {
+            case 2:
+                img2.GetComponent<Image>().sprite = weapon_dmg_inc;
+                break;
+            case 3:
+                img2.GetComponent<Image>().sprite = inc_res;
+                break;
+        }
+        Debug.Log(random_skill_2);
+
+        random_skill_3 = Random.Range(4, 7);
+        switch (random_skill_1)
+        {
+            case 4:
+                img3.GetComponent<Image>().sprite = speed_inc;
+                break;
+            case 5:
+                img3.GetComponent<Image>().sprite = loot_img;
+                break;
+            case 6:
+                img3.GetComponent<Image>().sprite = inc_range_img;
+                break;
+        }
+        Debug.Log(random_skill_3);
 
         skill_ui.SetActive(true);
     }
