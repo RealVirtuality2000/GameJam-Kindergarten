@@ -63,7 +63,7 @@ public class PlayerActions : MonoBehaviour
                 enemy.GetComponent<BossHealth>().TakeDamage(PlayerStats.weapon_damage);
             }else if (enemy.name == "Brokkoli")
             {
-            enemy.GetComponent<BrokkoliHealth>().TakeDamage(PlayerStats.weapon_damage);
+             enemy.GetComponent<BrokkoliHealth>().TakeDamage(PlayerStats.weapon_damage);
             }
 
         }
