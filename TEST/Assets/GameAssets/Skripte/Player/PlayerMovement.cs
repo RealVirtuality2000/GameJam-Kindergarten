@@ -17,7 +17,7 @@ public class PlayerMovement : MonoBehaviour
     {
         GameStateManager.Instance.OnGameStateChanged += OnGameStateChanged;
         cam = FindObjectOfType<Camera>().transform;
-
+        Debug.Log(cam);
         //Cursor.lockState = CursorLockMode.Locked;
     }
 
