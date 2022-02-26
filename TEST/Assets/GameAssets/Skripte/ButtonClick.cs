@@ -24,18 +24,18 @@ public class ButtonClick : MonoBehaviour,IPointerDownHandler,IPointerUpHandler
 
     public void was_clicked()
     {
-        
+        skill = GameObject.FindWithTag("SkillCanvas").GetComponent<Skills>().random_skill_1;
         Debug.Log(gameObject.name + " clicked!");
 
         switch (skill)
         {
             case 0:
                 GameObject.FindWithTag("SkillCanvas").GetComponent<Skills>().inc_max_lifepoints();
-                Debug.Log("inc weapon damage");
+                Debug.Log("inc max life");
                 break;
             case 1:
                 GameObject.FindWithTag("SkillCanvas").GetComponent<Skills>().inc_life_regeneration();
-                Debug.Log("inc resistance");
+                Debug.Log("inc life regeneration");
                 break;
         }
 

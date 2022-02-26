@@ -22,6 +22,7 @@ public class ButtonClick2 : MonoBehaviour,IPointerDownHandler,IPointerUpHandler
 
     public void was_clicked()
     {
+        skill = GameObject.FindWithTag("SkillCanvas").GetComponent<Skills>().random_skill_3;
         Debug.Log(gameObject.name + " clicked!");
 
         switch (skill)
