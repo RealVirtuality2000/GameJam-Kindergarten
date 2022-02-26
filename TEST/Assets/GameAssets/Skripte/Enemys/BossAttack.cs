@@ -59,7 +59,7 @@ public class BossAttack : MonoBehaviour
         {
             //Insert Attackcode here
 
-            PlayerStats.lifepoints -= Damage;
+            PlayerStats.lifepoints -= (Damage - PlayerStats.resistance);
 
             Debug.Log(PlayerStats.lifepoints);
             healthPlayer.SetHealth(PlayerStats.lifepoints);

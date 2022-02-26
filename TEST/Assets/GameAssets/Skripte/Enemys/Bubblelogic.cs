@@ -6,6 +6,7 @@ public class Bubblelogic : MonoBehaviour
 {
     public float speed = 5;
     private HealthbarSkript healthbar;
+    private int bubbledamage = 10; //von Amira hinzufgefügt
 
     private void FixedUpdate()
     {
@@ -19,7 +20,7 @@ public class Bubblelogic : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             FindObjectOfType<AudioManager>().Play("SoapBubble");
-            PlayerStats.lifepoints -= 10;            
+            PlayerStats.lifepoints -= (bubbledamage - PlayerStats.resistance);            
             healthbar.SetHealth(PlayerStats.lifepoints);
             Debug.Log("Your Current Health is: ");
             Debug.Log(PlayerStats.lifepoints);

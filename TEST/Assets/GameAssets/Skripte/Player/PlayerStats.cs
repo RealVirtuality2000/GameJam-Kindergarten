@@ -6,7 +6,7 @@ public class PlayerStats : MonoBehaviour
 {
     public static float lifepoints;
     public static float max_lifepoints = 100f;
-    public static float life_regeneration = 0.5f;
+    public static float life_regeneration = 5;
 
     public static float weapon_damage = 10;
     public static float speed;
@@ -52,8 +52,8 @@ public class PlayerStats : MonoBehaviour
         
         if(lifepoints < max_lifepoints)
         {
-            lifepoints += 1;
-            Debug.Log("Heilen");
+            lifepoints += life_regeneration;
+            Debug.Log("Heilen" + lifepoints);
         }
         
     }

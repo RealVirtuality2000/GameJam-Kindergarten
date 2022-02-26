@@ -15,6 +15,7 @@ public class BrokkoliAI : MonoBehaviour
 
     private HealthbarSkript HealthPlayer;
 
+    private float BrokkoliDamage = 5f;
 
     //Patrolling
 
@@ -112,7 +113,7 @@ public class BrokkoliAI : MonoBehaviour
         if (!alreadyAttacked)
         {
             //Attackcode Brokkoli
-            PlayerStats.lifepoints -= 5f;
+            PlayerStats.lifepoints -= (BrokkoliDamage - PlayerStats.resistance);
             HealthPlayer.SetHealth(PlayerStats.lifepoints);
 
             alreadyAttacked = true;

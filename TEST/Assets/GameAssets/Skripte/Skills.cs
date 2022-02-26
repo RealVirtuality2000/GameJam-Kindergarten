@@ -20,6 +20,8 @@ public class Skills : MonoBehaviour
 
     public GameObject skill_ui;
     
+
+    
     private void Awake()
     {
         DontDestroyOnLoad(this);
@@ -34,7 +36,7 @@ public class Skills : MonoBehaviour
 
     private void Update()
     {
-        if(PlayerStats.experience == 10)
+        if(PlayerStats.experience == 3)
         {
             FindObjectOfType<AudioManager>().Play("SkillMenu");
             skillpoints++;
@@ -98,21 +100,22 @@ public class Skills : MonoBehaviour
     public void inc_max_lifepoints() // skill 0
     {
         PlayerStats.max_lifepoints += 10f;
+        GameObject.Find("HealthbarPlayer").GetComponent<HealthbarSkript>().SetMaxHealth(PlayerStats.lifepoints);
     }
 
     public void inc_life_regeneration() // skill 1
     {
-        PlayerStats.life_regeneration += 1f;
+        PlayerStats.life_regeneration += 5f;
     }
 
     public void inc_weapon_damage() // skill 2
     {
-        PlayerStats.weapon_damage += 2f;
+        PlayerStats.weapon_damage += 5f;
     }
 
     public void inc_resistance() // skill 3
     {
-        PlayerStats.resistance += 5f;
+        PlayerStats.resistance += 1f;
     }
 
     public void inc_speed() //Skill 4
