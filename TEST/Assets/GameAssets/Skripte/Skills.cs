@@ -36,6 +36,7 @@ public class Skills : MonoBehaviour
     {
         if(PlayerStats.experience == 10)
         {
+            FindObjectOfType<AudioManager>().Play("SkillMenu");
             skillpoints++;
             skill_event();
             level_up();

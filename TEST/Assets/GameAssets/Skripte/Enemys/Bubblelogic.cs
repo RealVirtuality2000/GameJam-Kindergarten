@@ -15,10 +15,13 @@ public class Bubblelogic : MonoBehaviour
     
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.CompareTag("Player"))
+        
+        if (collision.gameObject.CompareTag("Player"))
         {
-            PlayerStats.lifepoints -= 10;
+            FindObjectOfType<AudioManager>().Play("SoapBubble");
+            PlayerStats.lifepoints -= 10;            
             healthbar.SetHealth(PlayerStats.lifepoints);
+            Debug.Log("Your Current Health is: ");
             Debug.Log(PlayerStats.lifepoints);
         }
         Destroy(gameObject);
