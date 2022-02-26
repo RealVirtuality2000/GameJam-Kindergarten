@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 turn;
 
 
-    public float speed = 6f;
+    public float speed = PlayerStats.speed;
 
     public float smooth_time = 0.3f;
     float turnSmoothVelocity;

@@ -8,7 +8,7 @@ public class PlayerActions : MonoBehaviour
     private GameObject Player;
 
     public Transform attack_point;
-    public float attack_range = 2f;
+    public float attack_range = PlayerStats.range;
     public LayerMask enemy_layer;
 
     private void Awake()
