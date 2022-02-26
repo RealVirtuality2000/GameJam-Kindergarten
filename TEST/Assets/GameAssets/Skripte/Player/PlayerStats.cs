@@ -31,24 +31,31 @@ public class PlayerStats : MonoBehaviour
     {
         lifepoints = max_lifepoints;
         healthbar.SetMaxHealth(lifepoints);
-        
+        InvokeRepeating("Reg")
         
         //weapon_damage = GetComponent<Weapon>.Damage;
         //ability_damage = GetComponent<Ability>.Damage;
     }
 
-    private void Update()
-    {
-        if(lifepoints != max_lifepoints)
-        {
-            StartCoroutine(Regeneration());
-        }
-    }
+    //private void Update()
+    //{
+    //    if(lifepoints < max_lifepoints)
+    //    {
+    //        healthbar.SetHealth(lifepoints);
+    //        StartCoroutine(Reg(life_regeneration));
+    //    }
+        
+    //}
 
-    private IEnumerator Regeneration()
+    private void Reg()
     {
-        yield return new WaitForSeconds(5); 
-        lifepoints += life_regeneration;
-        Debug.Log("Leben + 1");
+        
+        if(lifepoints < max_lifepoints)
+        {
+            lifepoints += 1;
+            Debug.Log("Heilen");
+        }
+        
     }
+    
 }

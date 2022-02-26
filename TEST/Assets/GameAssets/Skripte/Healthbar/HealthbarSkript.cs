@@ -10,13 +10,10 @@ public class HealthbarSkript : MonoBehaviour
     public void SetHealth(float health)
     {
         slider.value = health;
-        
+      
     }
 
-    //public void Regeneration(float regeneration)
-    //{
-    //    slider.value += regeneration;
-    //}
+    
 
     public void SetMaxHealth(float maxhealth)
     {
