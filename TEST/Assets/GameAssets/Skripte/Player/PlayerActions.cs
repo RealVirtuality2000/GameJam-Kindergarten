@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerActions : MonoBehaviour
 {
@@ -32,6 +33,11 @@ public class PlayerActions : MonoBehaviour
        if (Input.GetMouseButtonDown(0))
         {
             attack();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            ChangeScene();
         }
     }
 
@@ -70,6 +76,23 @@ public class PlayerActions : MonoBehaviour
         //animation
         PlayerStats.candy--;
         PlayerStats.lifepoints += 10f;
+    }
+
+    private void ChangeScene()
+    {
+        Scene currentScene = SceneManager.GetActiveScene();
+
+        // Retrieve the name of this scene.
+        string sceneName = currentScene.name;
+
+        if (sceneName == "Kindergarden")
+        {
+            SceneManager.LoadScene("ImaginaryWorld", LoadSceneMode.Single);
+        }
+        else if (sceneName == "ImaginaryWorld")
+        {
+            SceneManager.LoadScene("Kindergarden", LoadSceneMode.Single);
+        }
     }
 
 }
