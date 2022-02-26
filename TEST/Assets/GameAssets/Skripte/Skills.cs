@@ -19,8 +19,8 @@ public class Skills : MonoBehaviour
     public int random_skill_3;
 
     public GameObject skill_ui;
-    
 
+    public Text CandyCounter;
     
     private void Awake()
     {
@@ -36,6 +36,7 @@ public class Skills : MonoBehaviour
 
     private void Update()
     {
+        CandyCounter.text = PlayerStats.candy.ToString();
         if(PlayerStats.experience == 10)
         {
             FindObjectOfType<AudioManager>().Play("SkillMenu");

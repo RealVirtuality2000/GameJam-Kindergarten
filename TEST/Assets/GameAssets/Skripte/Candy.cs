@@ -2,11 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 
 public class Candy : MonoBehaviour
 {
     private float healing = 30;
+    
 
     private void Update()
     {
@@ -14,6 +16,7 @@ public class Candy : MonoBehaviour
         {
             heal_candy(healing);
         }
+        
     }
     
     private void heal_candy(float heal)
@@ -24,7 +27,7 @@ public class Candy : MonoBehaviour
 
                 if (PlayerStats.lifepoints <= PlayerStats.max_lifepoints - heal)
                 {
-         
+                    PlayerStats.candy--;
                     PlayerStats.lifepoints += heal;
                     GameObject.Find("HealthbarPlayer").GetComponent<HealthbarSkript>().SetHealth(PlayerStats.lifepoints);
                     Debug.Log("Legga Candy");  
