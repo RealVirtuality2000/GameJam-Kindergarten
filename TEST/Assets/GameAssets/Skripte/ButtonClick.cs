@@ -23,7 +23,7 @@ public class ButtonClick : MonoBehaviour,IPointerDownHandler,IPointerUpHandler
 
     private void OnEnable()
     {
-        skill = GameObject.Find("Player").GetComponent<Skills>().random_skill_1;
+        skill = GameObject.Find("SkillCanvas").GetComponent<Skills>().random_skill_1;
         //skill_2 = GameObject.Find("Player").GetComponent<Skills>().random_skill_2;
         //skill_3 = GameObject.Find("Player").GetComponent<Skills>().random_skill_3;
         switch (skill)
@@ -64,11 +64,11 @@ public class ButtonClick : MonoBehaviour,IPointerDownHandler,IPointerUpHandler
         switch (skill)
         {
             case 0:
-                GameObject.Find("Player").GetComponent<Skills>().inc_max_lifepoints();
+                GameObject.Find("SkillCanvas").GetComponent<Skills>().inc_max_lifepoints();
                 Debug.Log(PlayerStats.max_lifepoints);
                 break;
             case 1:
-                GameObject.Find("Player").GetComponent<Skills>().inc_life_regeneration();
+                GameObject.Find("SkillCanvas").GetComponent<Skills>().inc_life_regeneration();
                 Debug.Log(PlayerStats.life_regeneration);
                 break;
         }

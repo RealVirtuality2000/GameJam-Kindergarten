@@ -9,10 +9,10 @@ public class PlayerStats : MonoBehaviour
     public static float life_regeneration = 0.5f;
 
     public static float weapon_damage = 10;
-    public static float ability_damage;
+    public static float speed;
 
-    public static float resistence = 0f; //weniger Fallenschaden
-    public static float luck = 0f; //chance mehr candy zu bekommen
+    public static float resistance = 0f; //weniger Fallenschaden
+    public static float range = 0f; //chance mehr candy zu bekommen
 
     public static int candy = 0; //Item zum Heilen
 

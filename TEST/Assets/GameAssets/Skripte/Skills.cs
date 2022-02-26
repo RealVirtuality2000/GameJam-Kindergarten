@@ -12,7 +12,7 @@ public class Skills : MonoBehaviour
     public int random_skill_3;
 
     public GameObject skill_ui;
-
+    
     private void Awake()
     {
         DontDestroyOnLoad(this);
@@ -27,7 +27,7 @@ public class Skills : MonoBehaviour
 
     private void Update()
     {
-        if(PlayerStats.experience == 10)
+        if(PlayerStats.experience == 0)
         {
             skillpoints++;
             skill_event();
@@ -40,15 +40,15 @@ public class Skills : MonoBehaviour
         GameStateManager.Instance.SetState(GameState.Skill);
 
         random_skill_1 = Random.Range(0, 2);
-        random_skill_2 = Random.Range(2, 4);
-        random_skill_3 = Random.Range(4, 6);
+        random_skill_2 = Random.Range(2, 5);
+        random_skill_3 = Random.Range(5, 8);
 
         skill_ui.SetActive(true);
     }
 
     private void level_up()
     {
-        PlayerStats.experience = 0;
+        PlayerStats.experience = -1;
         PlayerStats.level++;
     }
 
@@ -67,18 +67,33 @@ public class Skills : MonoBehaviour
         PlayerStats.weapon_damage += 2f;
     }
 
-    public void inc_ability_damage() // skill 3
+    public void inc_resistance() // skill 3
     {
-        PlayerStats.ability_damage += 5f;
+        PlayerStats.resistance += 5f;
     }
 
-    public void inc_resistence() // skill 4
+    public void inc_speed() //Skill 4
     {
-        PlayerStats.resistence += 5f;
+        PlayerStats.speed += 1f;
     }
 
-    public void inc_loot() // skill 5
+    public void loot() //Skill 5
     {
-        PlayerStats.luck += 5f;
+        PlayerStats.candy += 1;
     }
+
+    public void inc_range() //Skill 6
+    {
+        PlayerStats.range += 1f;
+    }
+
+//public void inc_ability_damage() // skill 5
+    //{
+    //    PlayerStats.ability_damage += 5f;
+    //}
+
+    //public void inc_loot() // skill 6
+    //{
+    //    PlayerStats.luck += 5f;
+    //}
 }

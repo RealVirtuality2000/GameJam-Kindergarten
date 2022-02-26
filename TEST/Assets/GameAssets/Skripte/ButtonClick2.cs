@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class ButtonClick2 : MonoBehaviour,IPointerDownHandler,IPointerUpHandler
 {
     [SerializeField] private Image img;
-    [SerializeField] private Sprite resistence_inc, loot_inc;
+    [SerializeField] private Sprite speed_inc, loot, inc_range;
     public void OnPointerDown(PointerEventData eventData)
     {
         //throw new System.NotImplementedException();
@@ -24,7 +24,7 @@ public class ButtonClick2 : MonoBehaviour,IPointerDownHandler,IPointerUpHandler
     {
         //skill_1 = GameObject.Find("Player").GetComponent<Skills>().random_skill_1;
         //skill_2 = GameObject.Find("Player").GetComponent<Skills>().random_skill_2;
-        skill = GameObject.Find("Player").GetComponent<Skills>().random_skill_3;
+        skill = GameObject.Find("SkillCanvas").GetComponent<Skills>().random_skill_3;
         //switch (skill_1)
         //{
         //    case 0:
@@ -47,11 +47,15 @@ public class ButtonClick2 : MonoBehaviour,IPointerDownHandler,IPointerUpHandler
         {
             case 4:
                 GetComponent<Image>().color = Color.cyan;
-                img.sprite = resistence_inc;
+                img.sprite = speed_inc;
                 break;
             case 5:
                 GetComponent<Image>().color = Color.magenta;
-                img.sprite = loot_inc;
+                img.sprite = loot;
+                break;
+            case 6:
+                GetComponent <Image>().color = Color.green;
+                img.sprite = inc_range;
                 break;
         }
     }
@@ -63,12 +67,16 @@ public class ButtonClick2 : MonoBehaviour,IPointerDownHandler,IPointerUpHandler
         switch (skill)
         {
             case 4:
-                GameObject.Find("Player").GetComponent<Skills>().inc_resistence();
-                Debug.Log(PlayerStats.resistence);
+                GameObject.Find("SkillCanvas").GetComponent<Skills>().inc_speed ();
+                Debug.Log(PlayerStats.speed);
                 break;
             case 5:
-                GameObject.Find("Player").GetComponent<Skills>().inc_loot();
-                Debug.Log(PlayerStats.luck);
+                GameObject.Find("SkillCanvas").GetComponent<Skills>().loot();
+                Debug.Log(PlayerStats.candy);
+                break;
+            case 6:
+                GameObject.Find("SkillCanvas").GetComponent<Skills>().inc_range();
+                Debug.Log(PlayerStats.range);
                 break;
         }
 

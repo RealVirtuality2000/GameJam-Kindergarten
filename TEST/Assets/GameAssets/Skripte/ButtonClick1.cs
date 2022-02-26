@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class ButtonClick1 : MonoBehaviour,IPointerDownHandler,IPointerUpHandler
 {
     [SerializeField] private Image img;
-    [SerializeField] private Sprite weapon_dmg_inc, ability_dmg_inc;
+    [SerializeField] private Sprite weapon_dmg_inc, inc_res;
     public void OnPointerDown(PointerEventData eventData)
     {
         //throw new System.NotImplementedException();
@@ -23,7 +23,7 @@ public class ButtonClick1 : MonoBehaviour,IPointerDownHandler,IPointerUpHandler
     private void OnEnable()
     {
         //skill_1 = GameObject.Find("Player").GetComponent<Skills>().random_skill_1;
-        skill = GameObject.Find("Player").GetComponent<Skills>().random_skill_2;
+        skill = GameObject.Find("SkillCanvas").GetComponent<Skills>().random_skill_2;
         //skill_3 = GameObject.Find("Player").GetComponent<Skills>().random_skill_3;
         //switch (skill_1)
         //{
@@ -42,7 +42,7 @@ public class ButtonClick1 : MonoBehaviour,IPointerDownHandler,IPointerUpHandler
                 break;
             case 3:
                 GetComponent<Image>().color = Color.yellow;
-                img.sprite = ability_dmg_inc;
+                img.sprite = inc_res;
                 break;
         }
         //switch (skill_3)
@@ -63,12 +63,12 @@ public class ButtonClick1 : MonoBehaviour,IPointerDownHandler,IPointerUpHandler
         switch (skill)
         {
             case 2:
-                GameObject.Find("Player").GetComponent<Skills>().inc_weapon_damage();
+                GameObject.Find("SkillCanvas").GetComponent<Skills>().inc_weapon_damage();
                 Debug.Log(PlayerStats.weapon_damage);
                 break;
             case 3:
-                GameObject.Find("Player").GetComponent<Skills>().inc_ability_damage();
-                Debug.Log(PlayerStats.ability_damage);
+                GameObject.Find("SkillCanvas").GetComponent<Skills>().inc_resistance();
+                Debug.Log(PlayerStats.resistance);
                 break;
         }
 
