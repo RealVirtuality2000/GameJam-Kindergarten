@@ -36,7 +36,7 @@ public class Skills : MonoBehaviour
 
     private void Update()
     {
-        if(PlayerStats.experience == 3)
+        if(PlayerStats.experience == 10)
         {
             FindObjectOfType<AudioManager>().Play("SkillMenu");
             skillpoints++;
@@ -100,7 +100,7 @@ public class Skills : MonoBehaviour
     public void inc_max_lifepoints() // skill 0
     {
         PlayerStats.max_lifepoints += 10f;
-        GameObject.Find("HealthbarPlayer").GetComponent<HealthbarSkript>().SetMaxHealth(PlayerStats.lifepoints);
+        GameObject.Find("HealthbarPlayer").GetComponent<HealthbarSkript>().SetMaxHealth(PlayerStats.max_lifepoints);
     }
 
     public void inc_life_regeneration() // skill 1
