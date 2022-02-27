@@ -46,6 +46,7 @@ public class PlayerStats : MonoBehaviour
         if(lifepoints < max_lifepoints)
         {
             lifepoints += life_regeneration;
+            healthbar.SetHealth(lifepoints);
             Debug.Log("Heilen" + lifepoints);
         }
         
