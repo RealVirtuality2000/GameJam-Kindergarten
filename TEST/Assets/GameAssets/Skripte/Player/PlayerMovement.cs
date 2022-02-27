@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
 
     public float smooth_time = 0.3f;
     float turnSmoothVelocity;
+    public static bool isWalking;
 
     private void Awake()
     {
@@ -33,7 +34,16 @@ public class PlayerMovement : MonoBehaviour
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
         Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;
-        
+
+        if(horizontal >= 0.1f || vertical >= 0.1f)
+        {
+            isWalking = true;
+        }
+        else if(horizontal == 0f || vertical == 0f)
+        {
+            isWalking = false;
+        }
+
         if (direction.magnitude >= 0.1f)
         {
             
