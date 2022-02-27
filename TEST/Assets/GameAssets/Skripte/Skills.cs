@@ -31,7 +31,7 @@ public class Skills : MonoBehaviour
     private void Start()
     {
         //Player = GameObject.Find("Player");
-        skill_event(); //zum testen
+        //skill_event(); //zum testen
     }
 
     private void Update()
@@ -75,7 +75,7 @@ public class Skills : MonoBehaviour
         Debug.Log(random_skill_2);
 
         random_skill_3 = Random.Range(4, 7);
-        switch (random_skill_1)
+        switch (random_skill_3)
         {
             case 4:
                 img3.GetComponent<Image>().sprite = speed_inc;
