@@ -13,6 +13,7 @@ public class Rucksack : MonoBehaviour
         {
             RucksackUI.SetActive(true);
             PlayerStats.candy++;
+            RucksackBool = false;
         }
         else { RucksackUI.SetActive(false); }
         Debug.Log("Rucksack jey!");
