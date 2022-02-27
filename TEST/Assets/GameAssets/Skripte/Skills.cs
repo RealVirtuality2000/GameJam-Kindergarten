@@ -31,7 +31,7 @@ public class Skills : MonoBehaviour
     private void Start()
     {
         //Player = GameObject.Find("Player");
-        //skill_event(); //zum testen
+        skill_event(); //zum testen
     }
 
     private void Update()

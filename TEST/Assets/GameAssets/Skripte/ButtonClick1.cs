@@ -6,8 +6,7 @@ using UnityEngine.UI;
 
 public class ButtonClick1 : MonoBehaviour,IPointerDownHandler,IPointerUpHandler
 {
-    [SerializeField] private Image img;
-    [SerializeField] private Sprite weapon_dmg_inc, inc_res;
+    
     public void OnPointerDown(PointerEventData eventData)
     {
         //throw new System.NotImplementedException();

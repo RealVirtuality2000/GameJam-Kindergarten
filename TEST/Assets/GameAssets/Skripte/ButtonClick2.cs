@@ -6,8 +6,7 @@ using UnityEngine.UI;
 
 public class ButtonClick2 : MonoBehaviour,IPointerDownHandler,IPointerUpHandler
 {
-    [SerializeField] private Image img;
-    [SerializeField] private Sprite speed_inc, loot, inc_range;
+    
     public void OnPointerDown(PointerEventData eventData)
     {
         //throw new System.NotImplementedException();
@@ -28,7 +27,7 @@ public class ButtonClick2 : MonoBehaviour,IPointerDownHandler,IPointerUpHandler
         switch (skill)
         {
             case 4:
-                GameObject.FindWithTag("SkillCanvas").GetComponent<Skills>().inc_speed ();
+                GameObject.FindWithTag("SkillCanvas").GetComponent<Skills>().inc_speed();
                 Debug.Log("inc speed");
                 break;
             case 5:
